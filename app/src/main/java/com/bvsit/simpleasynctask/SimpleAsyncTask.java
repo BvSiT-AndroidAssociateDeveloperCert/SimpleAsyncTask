@@ -9,8 +9,8 @@ import java.util.Random;
 public class SimpleAsyncTask extends AsyncTask<Void,Void,String> {
     WeakReference<TextView> mTextView;
 
-    public SimpleAsyncTask(WeakReference<TextView> tv) {
-        this.mTextView = tv;
+    public SimpleAsyncTask(TextView tv) {
+        this.mTextView = new WeakReference<>(tv);
     }
 
     @Override

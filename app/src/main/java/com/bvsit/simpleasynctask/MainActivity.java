@@ -19,5 +19,6 @@ public class MainActivity extends AppCompatActivity {
     public void startTask(View view) {
         mTextView.setText(R.string.napping);
         new SimpleAsyncTask(mTextView).execute();
+
     }
 }
